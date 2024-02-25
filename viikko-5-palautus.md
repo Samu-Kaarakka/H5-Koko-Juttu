@@ -18,7 +18,9 @@ Asensin Apachen kommennoilla:
 $ sudo apt-get update
 $ sudo apt-get -y install apache2
 
-Tämän jälkeen testasin toimivuuden selaimessa localhost osoitteesta:
+Tämän jälkeen testasin toimivuuden selaimessa localhost osoitteesta ja kaikki toimi tässä vaiheessa niinkuin pitikin:
+
+![Add file: Upload](Osa2.png)
 
 
 
