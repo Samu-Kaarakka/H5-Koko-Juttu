@@ -5,3 +5,20 @@
 Asensin Oracle VM VirtualBoxissa uuden virtuaalikoneen. Asetuksina käytin samoja kuin aikaisemmissa asennuksissa: kieleksi American English, näppäimistön kieleksi Suomi sekä sijainniksi Helsinki. Debian installerissa Users-kohtaan annoin seuraavat tiedot:
 ![Add file: Upload](Osa1.png)
 
+Seuraavaksi tein tavalliset alkutoimenpiteet:
+
+* Päivitykset komennolla : $ sudo apt-get -y dist-upgrade 
+
+* Palomuurin asennus ja käyttöönotto komennoilla : $ sudo apt-get -y install ufw,
+$ sudo ufw enable
+
+### Apache weppipalvelin asennus
+
+Asensin Apachen kommennoilla: 
+$ sudo apt-get update
+$ sudo apt-get -y install apache2
+
+Tämän jälkeen testasin toimivuuden selaimessa localhost osoitteesta:
+
+
+
