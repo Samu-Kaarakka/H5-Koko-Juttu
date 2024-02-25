@@ -38,7 +38,7 @@ Tämän jälkeen poistin vanhan default-sivun käytöstä komennolla $ sudo a2di
 
 Seuraavaksi muokkasin index.html tiedostoa niin, että se näyttäisi kunnollisemmalta html-sivustolta: 
 
-
+![Add file: Upload](Osa4.png)
 
 
 
