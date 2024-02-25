@@ -22,5 +22,17 @@ Tämän jälkeen testasin toimivuuden selaimessa localhost osoitteesta ja kaikki
 
 ![Add file: Upload](Osa2.png)
 
+### SSH-etähallintapalvelimen asennus
+
+Asensin SSH:n komennoilla:
+$ sudo apt-get install -y openssh-server
+$ sudo systemctl enable ssh
+
+### Uusi etusivu weppi-palvelimelle
+
+Komennolla "sudoedit /etc/apache2/sites-available/testi.conf" avasin tekstieditorissa kyseisen tiedoston sekä muokkasin siihen haluamani <VirtualHost> tiedot:
+
+
+
 
 
