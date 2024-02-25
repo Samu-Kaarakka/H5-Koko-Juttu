@@ -32,6 +32,14 @@ $ sudo systemctl enable ssh
 
 Komennolla "sudoedit /etc/apache2/sites-available/testi.conf" avasin tekstieditorissa kyseisen tiedoston sekä muokkasin siihen haluamani <VirtualHost> tiedot:
 
+![Add file: Upload](Osa3.png)
+
+Tämän jälkeen poistin vanhan default-sivun käytöstä komennolla $ sudo a2dissite 000-default.conf ja localhost sivu toimi niinkuin pitääkin.
+
+Seuraavaksi muokkasin index.html tiedostoa niin, että se näyttäisi kunnollisemmalta html-sivustolta: 
+
+
+
 
 
 
