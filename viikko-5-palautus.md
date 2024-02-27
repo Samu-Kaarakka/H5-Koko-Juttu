@@ -44,6 +44,24 @@ Seuraavaksi muokkasin index.html tiedostoa niin, että se näyttäisi kunnollise
 
 Syötin alkuun komennon `ssh samuk@localhost`:
 
+![Add file: Upload](Osa5.png)
+
+Tämän jälkeen syötin komennon `ssh-keygen` käynnistääkseni avaimien luontiprosessin:
+
+![Add file: Upload](Osa6.png)
+
+Seuraavaksi syötin komennon `ssh-copy-id samuk@localhost`, ja komennolla `ssh samuk@localhost` testasin, että kirjautumaan pääsee ilman salasanaa:
+
+![Add file: Upload](Osa7.png)
+
+## C) Digging host
+
+Asensin dnsutils-työkalun komennolla `sudo apt-get -y install dnsutils`, jotta host ja dig komennot toimisivat niinkuin pitääkin.
+
+Seuraavaksi tein komennolla `host -a samukoo.me` DNS-kyselyn domain-nimestäni "samukoo.me" ja tulostui saatavilla olevat tiedot liittyen kyseiseen domainiin:
+
+
+
 
 
 
