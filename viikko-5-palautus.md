@@ -60,7 +60,25 @@ Asensin dnsutils-työkalun komennolla `sudo apt-get -y install dnsutils`, jotta 
 
 Seuraavaksi tein komennolla `host -a samukoo.me` DNS-kyselyn domain-nimestäni "samukoo.me" ja tulostui saatavilla olevat tiedot liittyen kyseiseen domainiin:
 
+![Add file: Upload](Osa8.png)
 
+Tulostuneiden tietojen läpikäynnissä käytin avuksi ChatGPT:tä, koska en ollut tietoinen mitä kukin kohta tarkoitti:
+
+* opcode: QUERY: Kertoo, että kyseessä on kysely
+* status: NOERROR: Kertoo, että kysely onnistui ilman virheitä
+* id: 37121: Kertoo kyselyn tunnisteen
+* flags: qr rd ra: Näyttää kyselyn tilan, kuten qr (vastaus), rd (rekursiivinen kysely) ja ra (vastaus valmis)
+
+### Question Section
+* samukoo.me IN ANY kertoo, että kysely koskee kaikkia tietueita domain-nimessä samukoo.me
+
+### Answer Section
+* samukoo.me. 3600 IN HINFO "RFC8482" "": Tässä vastausosiossa on yksi tietue, joka kertoo, että "samukoo.me" -domainilla on HINFO-tietue ("RFC8482") ilman erityistä tietoa.
+
+  ### Authority Section
+* Tässä osiossa ovat nimipalvelimet, jotka ovat vastuussa "samukoo.me" -domainista. Niitä ovat dns1.registrar-servers.com ja dns2.registrar-servers.com.
+
+Viimeinen tulostuksen kohta Received 108 bytes from 192.168.19.97#53 in 103 ms: Kertoo vastauksen koon, mistä palvelimelta vastaus tuli ja kuinka kauan aikaa vastauksen saamiseen kului.
 
 
 
