@@ -40,6 +40,12 @@ Seuraavaksi muokkasin index.html tiedostoa niin, että se näyttäisi kunnollise
 
 ![Add file: Upload](Osa4.png)
 
+## B) Pubkey
+
+Syötin alkuun komennon `ssh samuk@localhost`:
+
+
+
 
 
 
