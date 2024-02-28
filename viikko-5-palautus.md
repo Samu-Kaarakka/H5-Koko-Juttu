@@ -86,3 +86,5 @@ Viimeinen tulostuksen kohta Received 108 bytes from 192.168.19.97#53 in 103 ms: 
 
 
 
+
+
