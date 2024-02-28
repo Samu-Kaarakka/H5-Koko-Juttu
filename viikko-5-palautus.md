@@ -75,10 +75,48 @@ Tulostuneiden tietojen läpikäynnissä käytin avuksi ChatGPT:tä, koska en oll
 ### Answer Section
 * samukoo.me. 3600 IN HINFO "RFC8482" "": Tässä vastausosiossa on yksi tietue, joka kertoo, että "samukoo.me" -domainilla on HINFO-tietue ("RFC8482") ilman erityistä tietoa.
 
-  ### Authority Section
+### Authority Section
 * Tässä osiossa ovat nimipalvelimet, jotka ovat vastuussa "samukoo.me" -domainista. Niitä ovat dns1.registrar-servers.com ja dns2.registrar-servers.com.
 
 Viimeinen tulostuksen kohta Received 108 bytes from 192.168.19.97#53 in 103 ms: Kertoo vastauksen koon, mistä palvelimelta vastaus tuli ja kuinka kauan aikaa vastauksen saamiseen kului.
+
+Viimeisenä testasin komentoa `dig samukoo.me`, komento antoi kuvan mukaisen tulostuksen:
+
+![Add file: Upload](Osa9.png)
+
+### Header-osio:
+
+* Opcode: Tämä kertoo DNS-pyynnön tyypin. Tässä tapauksessa "QUERY" eli kysely.
+* Status: "NOERROR" tarkoittaa, että pyyntö onnistui ilman virheitä.
+* ID: Tämä on pyynnön tunniste. 
+* Flags: Tässä on erilaisia lippuja, kuten "qr" (Query Response), "rd" (Recursion Desired), ja "ra" (Recursion Available).
+
+### OPT PSEUDOSECTION:
+
+* Sisältää tietoja, jotka liittyvät DNS-tietojen siirtämiseen. Tässä on käytetty EDNS (Extension Mechanisms for DNS) versiota 0, ja määritelty tiettyjä UDP-asetuksia.
+
+### Question Section: 
+
+* Tämä kohta näyttää alkuperäisen kyselyn,kysyin A-tietuetta (IPv4-osoite) "samukoo.me":stä.
+
+### Anwser Section:
+
+* Saatu vastaus kyselyyn, yksi IPv4-osoite ("A"-tietue) "samukoo.me":lle. Osoite on 161.35.146.230 ja sitä voi käyttää sivustolle pääsyyn.
+
+### Query time:
+
+* Tämä kertoo, kuinka kauan kyselyyn vastaaminen kesti. Tässä se oli 108 millisekuntia
+
+### Server:
+
+* Kertoo kyselyyni vastaneen DNS-palvelimen tiedot
+
+Yhteenvetona: Tein kyselyn sivustolleni samukoo.me ja sain vastaukseksi yhden IPv4-osoitteen (161.35.146.230).
+
+## Lähteet 
+
+Karvinen, T. 2024. Tehtävänanto. https://terokarvinen.com/2024/linux-palvelimet-2024-alkukevat/#h5-koko-juttu.
+OpenAI. ChatGPT. Versio 3.5. 2024. https://chat.openai.com/chat. 
 
 
 
